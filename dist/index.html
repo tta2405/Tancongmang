@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bài giảng Toán - Thư viện học tập</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --accent: #2563eb;
+      --muted: #6b7280
+    }
+
+    body {
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 32px;
+      color: #111
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #16a34a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06)
+    }
+
+    .lecture {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 18px;
+      align-items: center
+    }
+
+    .cover {
+      width: 200px;
+      height: 140px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid #e6eefc;
+      background: #f0f4ff;
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .meta h2 {
+      margin: 0 0 8px 0;
+      font-size: 18px
+    }
+
+    .meta p {
+      margin: 0;
+      color: var(--muted)
+    }
+
+    .actions {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    .btn-download {
+      background: var(--accent);
+      color: white
+    }
+
+    .btn-preview {
+      border: 1px solid #e6eefc;
+      color: var(--accent);
+      background: white
+    }
+
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    @media(max-width:560px) {
+      .lecture {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">TO</div>
+      <div>
+        <h1>Bài giảng Toán — Thư viện học tập</h1>
+        <div style="color:var(--muted);font-size:13px">Trang web chia sẻ bài giảng Toán miễn phí.</div>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="lecture">
+        <div class="cover">
+          <!-- đổi math.jpg thành ảnh bạn muốn (đặt cùng thư mục) -->
+          <img src="toan.png" alt="Ảnh minh họa bài giảng Toán">
+        </div>
+        <div class="meta">
+          <h2>Bài giảng mẫu: "Đại số & Hình học cơ bản"</h2>
+          <p>Giảng viên: Thầy Nguyễn Văn A</p>
+          <p>Chủ đề: Ôn tập kiến thức Toán THPT</p>
+
+          <div class="actions">
+            <!-- link tải xuống: đổi file PDF thực tế -->
+            <a class="btn btn-download" href="BaiGiang.exe" download> Tải bài giảng (PDF) </a>
+            <a class="btn btn-preview" href="BaiGiang.exe" target="_blank"> Xem trước </a>
+          </div>
+
+          <footer>
+            <p><strong>Lưu ý:</strong> Đây là trang demo học HTML/CSS. Khi làm thật, hãy thay bằng nội dung và tài liệu của bạn.</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
